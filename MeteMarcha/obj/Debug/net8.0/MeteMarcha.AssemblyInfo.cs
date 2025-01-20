@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MeteMarcha")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8b5820a53a1a00b3e7d7365c5ed7b50181469b3b")]
 [assembly: System.Reflection.AssemblyProductAttribute("MeteMarcha")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MeteMarcha")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
