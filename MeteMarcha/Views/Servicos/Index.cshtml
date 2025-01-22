@@ -1,0 +1,28 @@
+﻿@using MeteMarcha.Models.Servico
+@model ServicosModel
+<link rel="stylesheet" href="~/css/style.css">
+
+<div class="text-center">
+    <table class="table table-striped">
+        <h3>Serviço</h3>
+        <thead>
+            <tr>
+                <th>Código</th>
+                <th>Nome</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var servico in Model.Servicos)
+            {
+                <tr>
+                    <td>@servico.ID</td>
+                    <td>@servico.Nome</td>
+                    <td>
+                        <a type="button" class="btn btn-warning" asp-controller="Servicos" asp-action="Record" asp-route-id="@servico.ID">Editar</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
