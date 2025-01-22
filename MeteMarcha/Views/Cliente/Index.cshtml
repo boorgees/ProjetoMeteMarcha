@@ -1,0 +1,31 @@
+﻿@using MeteMarcha.Models.Clientes;
+@model ClientesModel;
+<link rel="stylesheet" href="~/css/style.css">
+
+
+
+<div>
+    <h3>Clientes</h3>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Código</th>
+                <th>Nome</th>
+                <th>Situação</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var cliente in Model.Clientes)
+            {
+                <tr>
+                    <td>@cliente.Id</td>
+                    <td>@cliente.Nome</td>
+                    <td>@cliente.Situacao</td>
+                    <td>
+                        <a type="button" class="btn btn-warning" asp-controller="Clientes" asp-action="Record" asp-route-id="@cliente.Id">Editar</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
