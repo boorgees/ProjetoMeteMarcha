@@ -1,0 +1,29 @@
+﻿@using MeteMarcha.Models.Pecas
+
+@model PecasModel
+
+<div class="text-center">
+    <table class="table table-striped">
+        <h3>Peças</h3>
+        <thead>
+            <tr>
+                <th>Código</th>
+                <th>Nome</th>
+                <th>Preço</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var peca in Model.Pecas)
+            {
+                <tr>
+                    <td>@peca.ID</td>
+                    <td>@peca.Nome</td>
+                    <td>@peca.Preco</td>
+                    <td>
+                        <a type="button" class="btn btn-warning" asp-controller="Pecas" asp-action="Record" asp-route-id="@peca.ID">Editar</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
