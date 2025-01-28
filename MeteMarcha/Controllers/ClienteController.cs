@@ -30,5 +30,33 @@ namespace MeteMarcha.Controllers
 
             return View(clienteAtual);
         }
+
+        public IActionResult Delete(long id)
+        {
+            var cliente = _Clientes.FirstOrDefault(cliente => cliente.Id == id);
+
+            if (cliente == null)
+            {
+                // Caso o cliente não seja encontrado, redireciona para a lista de clientes
+                return RedirectToAction("Index");
+            }
+
+            // Passa o cliente para a View de confirmação
+            return View(cliente);
+        }
+
+        [HttpPost]
+        public IActionResult DeleteConfirmed(long id)
+        {
+            var cliente = _Clientes.FirstOrDefault(cliente => cliente.Id == id);
+
+            if (cliente != null)
+            {
+                _Clientes.Remove(cliente); // Se for uma lista em memória
+             
+            }
+
+            return RedirectToAction("Index"); // Redireciona após a exclusão
+        }
     }
 }

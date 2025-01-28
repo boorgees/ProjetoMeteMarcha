@@ -3,7 +3,7 @@ namespace MeteMarcha.Models.Clientes
 {
     public class ClienteModel
     {
-        public int Id { get; set; }
+        public long Id { get; set; }
 
         public string Nome { get; set; }
 
