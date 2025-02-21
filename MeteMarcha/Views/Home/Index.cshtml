@@ -1,5 +1,5 @@
 ﻿@{
-    ViewData["Title"] = "Mete Marcha";
+    ViewData["Title"] = "Mete Marcha - Sistema Interno";
 }
 
 <!DOCTYPE html>
@@ -7,14 +7,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Metemarcha - Oficina de Automóveis</title>
+    <title>Mete Marcha - Sistema Interno</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #A3E2FF; /* Fundo principal */
-            color: #003F5C; /* Texto padrão */
+            background-color: #f8f9fa; /* Fundo suave */
+            color: #343a40; /* Texto escuro */
         }
 
         .text-center {
@@ -23,48 +24,202 @@
         }
 
         h1 {
-            color: #003F5C; /* Cor do título */
+            color: #003F5C; /* Azul escuro */
             font-size: 2.5rem;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
+            font-weight: bold;
         }
 
         h3 {
-            color: #003F5C; /* Cor do subtítulo */
-            font-size: 1.8rem;
-            margin-bottom: 20px;
+            color: #007BFF; /* Azul vibrante */
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            font-weight: 500;
         }
 
-        .description {
+        .btn-access {
+            background-color: #28a745; /* Verde */
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
             font-size: 1.2rem;
-            color: #003F5C;
-            margin: 0 auto;
-            width: 80%;
-            line-height: 1.6;
+            transition: background-color 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            margin: 10px;
+            cursor: pointer;
+            text-decoration: none;
         }
 
-        section {
-            padding: 40px 20px;
-            background-color: #FFFFFF;
-            margin: 20px auto;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            .btn-access:hover {
+                background-color: #218838; /* Verde escuro */
+            }
+
+        .quick-access {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 40px;
         }
+
+        .about-section {
+            display: flex; /* Flexbox aplicado */
+            justify-content: space-between; /* Espaço entre os elementos */
+            gap: 20px;
+            background-color: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+        }
+
+            .about-section h2 {
+                color: #007BFF;
+                font-size: 2rem;
+                margin-bottom: 20px;
+                text-align: center;
+            }
+
+        .about-box {
+            background-color: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+            .about-box h3 {
+                color: #003F5C;
+                font-size: 1.5rem;
+                margin-bottom: 15px;
+            }
+
+            .about-box ol {
+                list-style-type: disc;
+                padding-left: 20px;
+            }
+
+                .about-box ul li {
+                    margin-bottom: 10px;
+                    
+                }
+
+        .motivational-message {
+            background-color: #007BFF;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px auto;
+            max-width: 800px;
+            text-align: center;
+            font-size: 1.2rem;
+        }
+
+        footer {
+            background-color: #343a40; /* Preto */
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+            footer a {
+                color: #ffc107; /* Amarelo */
+                text-decoration: none;
+            }
+
+                footer a:hover {
+                    text-decoration: underline;
+                }
     </style>
 </head>
 <body>
 
     <header class="text-center">
-        <h1>Metemarcha</h1>
-        <h3>Oficina de Automóveis</h3>
+        <h1>Auto Mecânica Mete Marcha</h1>
+        <h3>Sistema Interno de Gestão e Gerenciamento </h3>
     </header>
 
     <section class="text-center">
-        <div class="description">
-            <p>
-                Bem-vindo à Metemarcha!
-            </p>
+        <div class="quick-access">
+            <a href="/Clientes/Index" class="btn-access">
+                <i class="fas fa-users"></i> Clientes
+            </a>
+            <a href="/Pecas/Index" class="btn-access">
+                <i class="fas fa-cogs"></i> Peças
+            </a>
+            <a href="/Fornecedores/Index" class="btn-access">
+                <i class="fas fa-truck"></i> Fornecedores
+            </a>
+            <a href="/Servicos/Index" class="btn-access">
+                <i class="fas fa-tools"></i> Serviços
+            </a>
         </div>
     </section>
 
+    <!-- Mensagem Motivacional Aleatória -->
+    <div class="motivational-message" id="motivationalMessage">
+        <p>Carregando mensagem motivacional...</p>
+    </div>
+
+    <!-- Seção Sobre Nós -->
+    <section class="about-section">
+        @* <h2>Sobre Nós</h2> *@
+
+        <!-- Missão -->
+        <div class="about-box">
+            <h3>Missão</h3>
+            <p>Nossa missão é oferecer soluções inovadoras e de alta qualidade, superando as expectativas dos nossos clientes e contribuindo para o sucesso dos seus negócios.</p>
+        </div>
+
+        <!-- Visão -->
+        <div class="about-box">
+            <h3>Visão</h3>
+            <p>Ser reconhecidos como líderes no mercado, destacando-nos pela excelência, ética e compromisso com a sustentabilidade.</p>
+        </div>
+
+        <!-- Valores -->
+        <div class="about-box">
+            <h3>Valores</h3>
+            <ol>
+                <li>Integridade</li>
+                <li>Inovação</li>
+                <li>Comprometimento</li>
+                <li>Respeito</li>
+                <li>Sustentabilidade</li>
+            </ol>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2025 - Mete Marcha - <a href="/Home/Privacy">Privacidade</a>
+    </footer>
+
+    <script>
+        // Mensagens motivacionais
+        const messages = [
+            "Grandes conquistas começam com pequenos passos.",
+            "Acredite em você e tudo será possível.",
+            "O sucesso é a soma de pequenos esforços repetidos dia após dia.",
+            "Não desista. Geralmente é a última chave no chaveiro que abre a porta.",
+            "Você é capaz de coisas incríveis. Acredite nisso!",
+            "O caminho para o sucesso é feito de persistência e dedicação."
+        ];
+
+        // Função para exibir uma mensagem aleatória
+        function showRandomMessage() {
+            const randomIndex = Math.floor(Math.random() * messages.length);
+            const messageElement = document.getElementById("motivationalMessage");
+            messageElement.innerHTML = `<p>${messages[randomIndex]}</p>`;
+        }
+
+        // Exibe a mensagem ao carregar a página
+        document.addEventListener("DOMContentLoaded", showRandomMessage);
+    </script>
 </body>
 </html>

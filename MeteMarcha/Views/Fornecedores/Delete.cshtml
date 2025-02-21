@@ -1,0 +1,23 @@
+﻿@model MeteMarcha.Models.Fornecedores.FornecedorModel
+
+@{
+    ViewData["Title"] = "Excluir Fornecedor";
+}
+
+<div class="container">
+    <h2>Excluir Fornecedor</h2>
+
+    <div class="alert alert-warning">
+        <p>Tem certeza de que deseja excluir o fornecedor <strong>@Model.Nome</strong>?</p>
+    </div>
+
+    <form asp-controller="Fornecedores" asp-action="ConfirmDelete" method="post">
+        <input type="hidden" asp-for="ID" />
+        <button type="submit" class="btn btn-danger">
+            <i class="fas fa-trash"></i> Confirmar Exclusão
+        </button>
+        <a class="btn btn-secondary" asp-controller="Fornecedores" asp-action="Index">
+            <i class="fas fa-arrow-left"></i> Cancelar
+        </a>
+    </form>
+</div>

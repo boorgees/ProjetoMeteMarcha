@@ -1,0 +1,19 @@
+﻿@using MeteMarcha.Models.Servicos
+@model ServicoModel
+
+<div class="container">
+    <h3>Excluir Serviço</h3>
+
+    <p>Tem certeza que deseja excluir o serviço <strong>@Model.Nome</strong>?</p>
+
+    <!-- Botão para Confirmar Exclusão -->
+    <form asp-controller="Servicos" asp-action="ConfirmDelete" method="post">
+        <input type="hidden" name="id" value="@Model.ID" />
+        <button type="submit" class="btn btn-danger" onclick="return confirm('Tem certeza que deseja excluir este serviço?');">
+            Confirmar Exclusão
+        </button>
+    </form>
+
+    <!-- Botão para Cancelar -->
+    <a href="@Url.Action("Index", "Servicos")" class="btn btn-secondary">Cancelar</a>
+</div>

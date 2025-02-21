@@ -1,20 +1,51 @@
-﻿@using MeteMarcha.Models.Servico
+﻿@using MeteMarcha.Models.Servicos
 @model ServicoModel
-<link rel="stylesheet" href="~/css/style.css">
-<div>
-    <h3>Servico</h3>
-    <form>
+
+<div class="container">
+    <h3>@(Model.ID > 0 ? "Editar Serviço" : "Novo Serviço")</h3>
+
+    <!-- Formulário de Criação/Alteração -->
+    <form asp-controller="Servicos" asp-action="Record" method="post">
+        <!-- Campo oculto que indica o tipo de ação: 'save' ou 'delete' -->
+        <input type="hidden" name="type" value="save" />
+
         <div class="form-group">
-            <label>Nome</label>
-            <input type="text" id="nome" class="form-control" asp-for="Nome" />
+            <label for="Nome">Nome</label>
+            <input type="text" class="form-control" id="Nome" name="Nome" value="@Model.Nome" required />
         </div>
+
         <div class="form-group">
-            <label>Cliente</label>
-            <input type="number" id="nome" class="form-control" asp-for="Cliente" />
+            <label for="Cliente_Id">Cliente</label>
+            <select asp-for="Cliente_Id" class="form-control"
+                    asp-items="@(new SelectList(ViewBag.Clientes, "ID", "Nome", Model?.Cliente_Id))"
+                    required>
+                <option value="">Selecione um Cliente</option>
+            </select>
         </div>
+
         <div class="form-group">
-            <label>Peça</label>
-            <input type="text" id="nome" class="form-control" asp-for="Peca" />
+            <label for="Peca_Id">Peça</label>
+            <select asp-for="Peca_Id" class="form-control"
+                    asp-items="@(new SelectList(ViewBag.Pecas, "ID", "Nome", Model?.Peca_Id))"
+                    required>
+                <option value="">Selecione uma Peça</option>
+            </select>
+        </div>
+
+        <div class="form-group mt-3">
+            <button type="submit" class="btn btn-primary">Salvar</button>
         </div>
     </form>
+
+    <!-- Formulário de Exclusão (se necessário) -->
+    @if (Model.ID > 0)
+    {
+        <form asp-controller="Servicos" asp-action="Record" method="post">
+            <input type="hidden" name="type" value="delete" />
+            <input type="hidden" name="id" value="@Model.ID" />
+            <button type="submit" class="btn btn-danger" onclick="return confirm('Tem certeza que deseja excluir este serviço?');">
+                Excluir
+            </button>
+        </form>
+    }
 </div>

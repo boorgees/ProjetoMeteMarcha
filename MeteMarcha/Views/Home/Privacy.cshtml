@@ -1,6 +1,96 @@
 ﻿@{
-    ViewData["Title"] = "Privacy Policy";
+    ViewData["Title"] = "Política de Privacidade";
 }
-<h1>@ViewData["Title"]</h1>
 
-<p>Use this page to detail your site's privacy policy.</p>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"] - Mete Marcha</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa; /* Fundo suave */
+            color: #343a40; /* Texto escuro */
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #003F5C; /* Azul escuro */
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .highlight {
+            color: #007BFF; /* Azul vibrante */
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #343a40; /* Preto */
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: #ffc107; /* Amarelo */
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>@ViewData["Title"]</h1>
+        <p>
+            Na <span class="highlight">Mete Marcha</span>, levamos a privacidade dos nossos usuários muito a sério. Esta política descreve como coletamos, usamos e protegemos as informações que você nos fornece.
+        </p>
+        <p>
+            <span class="highlight">1. Coleta de Dados:</span> Coletamos informações pessoais, como nome, e-mail e endereço, apenas quando você as fornece voluntariamente, por exemplo, ao se cadastrar em nossa plataforma.
+        </p>
+        <p>
+            <span class="highlight">2. Uso dos Dados:</span> Utilizamos suas informações para melhorar nossos serviços, personalizar sua experiência e entrar em contato quando necessário.
+        </p>
+        <p>
+            <span class="highlight">3. Proteção dos Dados:</span> Implementamos medidas de segurança rigorosas para proteger suas informações contra acesso não autorizado ou divulgação.
+        </p>
+        <p>
+            <span class="highlight">4. Compartilhamento de Dados:</span> Não vendemos, trocamos ou transferimos suas informações pessoais para terceiros sem o seu consentimento.
+        </p>
+        <p>
+            Para mais informações sobre nossa política de privacidade, entre em contato conosco através do e-mail: <span class="highlight">contato@metemarcha.com</span>.
+        </p>
+    </div>
+
+    <footer>
+        &copy; 2025 - Mete Marcha - <a href="/Home/Privacy">Política de Privacidade</a>
+    </footer>
+
+</body>
+</html>

@@ -7,7 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Views\Cliente\Delete.cs" />
+    <Compile Remove="Views\Clientes\Delete.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MeteMarcha.Utils\MeteMarcha.Utils.csproj" />
   </ItemGroup>
 
 </Project>

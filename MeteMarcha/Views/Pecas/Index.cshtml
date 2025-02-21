@@ -1,15 +1,25 @@
-﻿@using MeteMarcha.Models.Pecas
-
+﻿@using MeteMarcha.Models.Pecas;
 @model PecasModel
 
-<div class="text-center">
+<div class="container">
+    <h3>Peças</h3>
+
+    <!-- Botão para adicionar nova peça -->
+    <div class="mb-3">
+        <a class="btn btn-primary" asp-controller="Pecas" asp-action="Record">
+            <i class="bi bi-person-plus-fill"></i> Nova Peça
+        </a>
+    </div>
+
+    <!-- Tabela de peças -->
     <table class="table table-striped">
-        <h3>Peças</h3>
         <thead>
             <tr>
                 <th>Código</th>
                 <th>Nome</th>
                 <th>Preço</th>
+                
+                <th>Ações</th>
             </tr>
         </thead>
         <tbody>
@@ -19,8 +29,20 @@
                     <td>@peca.ID</td>
                     <td>@peca.Nome</td>
                     <td>@peca.Preco</td>
+                   
                     <td>
-                        <a type="button" class="btn btn-warning" asp-controller="Pecas" asp-action="Record" asp-route-id="@peca.ID">Editar</a>
+                        <!-- Botão de Editar -->
+                        <a class="btn btn-warning" asp-controller="Pecas" asp-action="Record" asp-route-id="@peca.ID">
+                            <i class="bi bi-pencil-square"></i> Editar
+                        </a>
+
+                        <!-- Formulário para Exclusão -->
+                        <form asp-controller="Pecas" asp-action="Delete1" method="post" style="display:inline;">
+                            <input type="hidden" name="id" value="@peca.ID" />
+                            <button type="submit" class="btn btn-danger" onclick="return confirm('Tem certeza que deseja excluir esta peça?');">
+                                <i class="bi bi-trash"></i> Excluir
+                            </button>
+                        </form>
                     </td>
                 </tr>
             }

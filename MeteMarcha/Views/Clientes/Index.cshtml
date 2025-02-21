@@ -1,0 +1,49 @@
+﻿@using MeteMarcha.Models.Clientes;
+@model ClientesModel;
+
+<div class="container">
+    <h3>Clientes</h3>
+
+    <!-- Botão para adicionar novo cliente -->
+    <div class="mb-3">
+        <a class="btn btn-primary" asp-controller="Clientes" asp-action="Record">
+            <i class="bi bi-person-plus-fill"></i> Novo Cliente
+        </a>
+    </div>
+
+    <!-- Tabela de clientes -->
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Código</th>
+                <th>Nome</th>
+                <th>Situação</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var cliente in Model.Clientes)
+            {
+                <tr>
+                    <td>@cliente.ID</td>
+                    <td>@cliente.Nome</td>
+                    <td>@cliente.Situacao</td>
+                    <td>
+                        <!-- Botão de Editar -->
+                        <a class="btn btn-warning" asp-controller="Clientes" asp-action="Record" asp-route-id="@cliente.ID">
+                            <i class="bi bi-pencil-square"></i> Editar
+                        </a>
+
+                        <!-- Formulário para Exclusão -->
+                        <form asp-controller="Clientes" asp-action="ConfirmDelete" method="post" style="display:inline;">
+                            <input type="hidden" name="id" value="@cliente.ID" />
+                            <button type="submit" class="btn btn-danger" onclick="return confirm('Tem certeza que deseja excluir este cliente?');">
+                                <i class="bi bi-trash"></i> Excluir
+                            </button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

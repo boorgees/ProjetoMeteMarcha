@@ -1,0 +1,26 @@
+C:\Users\chris\Desktop\ProjetoC#\MeteMarcha\MeteMarcha.Utils\bin\Debug\net8.0\MeteMarcha.Utils.deps.json
+C:\Users\chris\Desktop\ProjetoC#\MeteMarcha\MeteMarcha.Utils\bin\Debug\net8.0\MeteMarcha.Utils.dll
+C:\Users\chris\Desktop\ProjetoC#\MeteMarcha\MeteMarcha.Utils\bin\Debug\net8.0\MeteMarcha.Utils.pdb
+C:\Users\chris\Desktop\ProjetoC#\MeteMarcha\MeteMarcha.Utils\obj\Debug\net8.0\MeteMarcha.Utils.csproj.AssemblyReference.cache
+C:\Users\chris\Desktop\ProjetoC#\MeteMarcha\MeteMarcha.Utils\obj\Debug\net8.0\MeteMarcha.Utils.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\chris\Desktop\ProjetoC#\MeteMarcha\MeteMarcha.Utils\obj\Debug\net8.0\MeteMarcha.Utils.AssemblyInfoInputs.cache
+C:\Users\chris\Desktop\ProjetoC#\MeteMarcha\MeteMarcha.Utils\obj\Debug\net8.0\MeteMarcha.Utils.AssemblyInfo.cs
+C:\Users\chris\Desktop\ProjetoC#\MeteMarcha\MeteMarcha.Utils\obj\Debug\net8.0\MeteMarcha.Utils.csproj.CoreCompileInputs.cache
+C:\Users\chris\Desktop\ProjetoC#\MeteMarcha\MeteMarcha.Utils\obj\Debug\net8.0\MeteMarcha.Utils.sourcelink.json
+C:\Users\chris\Desktop\ProjetoC#\MeteMarcha\MeteMarcha.Utils\obj\Debug\net8.0\MeteMarcha.Utils.dll
+C:\Users\chris\Desktop\ProjetoC#\MeteMarcha\MeteMarcha.Utils\obj\Debug\net8.0\refint\MeteMarcha.Utils.dll
+C:\Users\chris\Desktop\ProjetoC#\MeteMarcha\MeteMarcha.Utils\obj\Debug\net8.0\MeteMarcha.Utils.pdb
+C:\Users\chris\Desktop\ProjetoC#\MeteMarcha\MeteMarcha.Utils\obj\Debug\net8.0\ref\MeteMarcha.Utils.dll
+C:\Users\chris\Desktop\ProjetoC# - Copia\MeteMarcha\MeteMarcha.Utils\bin\Debug\net8.0\MeteMarcha.Utils.deps.json
+C:\Users\chris\Desktop\ProjetoC# - Copia\MeteMarcha\MeteMarcha.Utils\bin\Debug\net8.0\MeteMarcha.Utils.dll
+C:\Users\chris\Desktop\ProjetoC# - Copia\MeteMarcha\MeteMarcha.Utils\bin\Debug\net8.0\MeteMarcha.Utils.pdb
+C:\Users\chris\Desktop\ProjetoC# - Copia\MeteMarcha\MeteMarcha.Utils\obj\Debug\net8.0\MeteMarcha.Utils.csproj.AssemblyReference.cache
+C:\Users\chris\Desktop\ProjetoC# - Copia\MeteMarcha\MeteMarcha.Utils\obj\Debug\net8.0\MeteMarcha.Utils.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\chris\Desktop\ProjetoC# - Copia\MeteMarcha\MeteMarcha.Utils\obj\Debug\net8.0\MeteMarcha.Utils.AssemblyInfoInputs.cache
+C:\Users\chris\Desktop\ProjetoC# - Copia\MeteMarcha\MeteMarcha.Utils\obj\Debug\net8.0\MeteMarcha.Utils.AssemblyInfo.cs
+C:\Users\chris\Desktop\ProjetoC# - Copia\MeteMarcha\MeteMarcha.Utils\obj\Debug\net8.0\MeteMarcha.Utils.csproj.CoreCompileInputs.cache
+C:\Users\chris\Desktop\ProjetoC# - Copia\MeteMarcha\MeteMarcha.Utils\obj\Debug\net8.0\MeteMarcha.Utils.sourcelink.json
+C:\Users\chris\Desktop\ProjetoC# - Copia\MeteMarcha\MeteMarcha.Utils\obj\Debug\net8.0\MeteMarcha.Utils.dll
+C:\Users\chris\Desktop\ProjetoC# - Copia\MeteMarcha\MeteMarcha.Utils\obj\Debug\net8.0\refint\MeteMarcha.Utils.dll
+C:\Users\chris\Desktop\ProjetoC# - Copia\MeteMarcha\MeteMarcha.Utils\obj\Debug\net8.0\MeteMarcha.Utils.pdb
+C:\Users\chris\Desktop\ProjetoC# - Copia\MeteMarcha\MeteMarcha.Utils\obj\Debug\net8.0\ref\MeteMarcha.Utils.dll

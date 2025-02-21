@@ -1,0 +1,14 @@
+﻿@model MeteMarcha.Models.Pecas.PecaModel;
+
+<div class="container">
+    <h3>Excluir Peça</h3>
+    <p>Tem certeza de que deseja excluir a peça <strong>@Model.Nome</strong>?</p>
+
+    <form asp-controller="Pecas" asp-action="Record" method="post" onsubmit="return confirm('Tem certeza que deseja excluir essa peça?');">
+        <input type="hidden" asp-for="ID" />
+        <button type="submit" name="type" value="delete" class="btn btn-danger">Excluir</button>
+        <a asp-controller="Pecas" asp-action="Index" class="btn btn-secondary">Cancelar</a>
+    </form>
+
+
+</div>
