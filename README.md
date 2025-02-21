@@ -15,9 +15,3 @@ MeteMarcha é um sistema de gestão de serviços automotivos, permitindo o cadas
 - **MySQL** para armazenamento de dados
 - **Entity Framework (ou conexão direta com MySQL)** para manipulação do banco de dados
 - **Bootstrap** para um design responsivo e moderno
-
-## 🚀 Como Rodar o Projeto
-
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/seu-usuario/metemarcha.git
